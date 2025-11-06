@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Website</title>
+  <meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today.">
+  <link rel="stylesheet" href="amount2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <!-- Left Text -->
+  <div class="left">
+    <h1 class="text-white">WE CAN SAVE THE FUTURE</h1>
+  </div>
+
+  <!-- Right Donation Form -->
+  <div class="right">
+    <p class="fw-bold mb-3">Choose a donation plan</p>
+
+    <div class="two mb-3">
+      <div class="d-flex align-items-center">
+        <input type="radio" name="donation" class="me-3"><span class="span2">$20</span>
+      </div>
+      <p class="ps-4">Helps provide clean water and food for children.</p>
+    </div>
+
+    <div class="two mb-3">
+      <div class="d-flex align-items-center">
+        <input type="radio" name="donation" class="me-3"><span class="span2">$40</span>
+      </div>
+      <p class="ps-4">Supports education and medical care for one child.</p>
+    </div>
+
+    <div class="two2 mb-3">
+      <div class="d-flex align-items-center">
+        <input type="radio" name="donation" class="me-3"><span class="span2">$100</span>
+      </div>
+      <p class="ps-4">Gives a family hope with shelter and monthly supplies.</p>
+    </div>
+
+    <a href="customamount.html" class="amount">Enter a custom donation amount</a>
+
+    <div class="end pt-4">
+      <p class="fw-bold">Choose a donation frequency</p>
+      <div class="d-flex flex-wrap justify-content-center endd">
+        <div class="month">
+          <input type="radio" name="donate" class="me-2"><span>Monthly</span>
+        </div>
+        <div class="time">
+          <input type="radio" name="donate" class="me-2"><span>One time</span>
+        </div>
+      </div>
+
+      <div class="bttn">
+        <button type="button" class="btn btn-light rounded-pill sign">CheckOut</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Supabase JS CDN (UMD version) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Supabase config
+  const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+  const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw"; // replace with your anon key
+  const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+  document.querySelector(".sign").addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const amountEl = document.querySelector('input[name="donation"]:checked');
+    const amount = amountEl ? amountEl.nextElementSibling.textContent.trim() : null;
+
+    const freqEl = document.querySelector('input[name="donate"]:checked');
+    const frequency = freqEl ? freqEl.nextElementSibling.textContent.trim() : null;
+
+    if (!amount || !frequency) {
+      alert("❌ Please select both a donation amount and frequency.");
+      return;
+    }
+
+    const description = amountEl?.parentElement?.nextElementSibling?.textContent?.trim() || null;
+
+    try {
+      const { data, error } = await supabaseClient
+        .from("donation_plans")
+        .insert([{ amount, frequency, description }]);
+
+      if (error) throw error;
+
+      alert("✅ Donation plan saved successfully!");
+      window.location.href = "index.html";
+    } catch (err) {
+      alert("❌ Error saving donation: " + err.message);
+      console.error(err);
+    }
+  });
+</script>
+</body>
+</html>
+
+<!-- Supabase connection + insert logic
+<script type="module">
+  import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+  // ✅ Replace with your own Supabase credentials
+  const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+  const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw";
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+  // ✅ When the user clicks "CheckOut"
+  document.querySelector(".sign").addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    // Get selected amount
+    const amountEl = document.querySelector('input[name="donation"]:checked');
+    const amount = amountEl
+      ? amountEl.nextElementSibling.textContent.trim()
+      : null;
+
+    // Get donation frequency
+    const freqEl = document.querySelector('input[name="donate"]:checked');
+    const frequency = freqEl
+      ? freqEl.nextElementSibling.textContent.trim()
+      : null;
+
+    if (!amount || !frequency) {
+      alert("❌ Please select both a donation amount and frequency.");
+      return;
+    }
+
+    // Optional description text
+    const description = amountEl?.parentElement?.nextElementSibling?.textContent?.trim() || null;
+
+    // Insert into Supabase
+    const { data, error } = await supabase
+      .from("donation_plans")
+      .insert([{ amount, frequency, description }]);
+
+    if (error) {
+      alert("❌ Error saving donation: " + error.message);
+      console.error(error);
+    } else {
+      alert("✅ Donation plan saved successfully!");
+      window.location.href = "index.html"; // redirect to homepage
+    }
+  });
+</script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NGO Website</title>
+<meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today." />
+     <link rel="stylesheet" href="amount2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+<h1>WE CAN SAVE THE FUTURE</h1>
+        </div>
+        <div class="right">
+<p>Choose a donation plan</p>
+<div class="two mb-3">
+    <div class="rig"><input type="radio" name="donation" class="me-3"><span class="span2">$20</span></div>
+    <p class="rig pt-3 ps-2">Helps provide clean water and food for children.</p>
+</div>
+<div class="two mb-3">
+    <div class="rig"><input type="radio" name="donation" class="me-3"><span class="span2">$40</span></div>
+    <p class="rig pt-3 ps-2">Supports education and medical care for one child.</p>
+</div>
+<div class="two2 mb-3">
+    <div class="rig2"><input type="radio" name="donation" class="me-3"><span class="span2">$100</span></div>
+    <p class="rig2 pt-3">Gives a family hope with shelter and monthly supplies.</p>
+</div>
+<a href="customamount.html" class="amount text-white">Enter a custom donation amount</a>
+<div class="end pt-5">
+    <p>Choose a donation frequency</p>
+    <div class="endd d-flex justify-content-between align-items-center">
+    <div class="month d-flex px-5 ms-5"><input type="radio" name="donate" class="me-3"><p class="pt-3">Monthly</p></div>
+    <div class="time d-flex"><input type="radio" name="donate" class="me-3"><p class="pt-3">One time</p></div>
+    </div>
+    <div class="bttn">
+     <a href="index.html"><button type="button" class="btn btn-light sign rounded-pill">CheckOut</button></a>
+     </div>
+</div>
+        </div>
+    </div>
+<!-- Supabase connection + insert logic
+<script type="module">
+  import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+  // ✅ Replace with your own Supabase credentials
+  const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+  const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw";
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+  // ✅ When the user clicks "CheckOut"
+  document.querySelector(".sign").addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    // Get selected amount
+    const amountEl = document.querySelector('input[name="donation"]:checked');
+    const amount = amountEl
+      ? amountEl.nextElementSibling.textContent.trim()
+      : null;
+
+    // Get donation frequency
+    const freqEl = document.querySelector('input[name="donate"]:checked');
+    const frequency = freqEl
+      ? freqEl.nextElementSibling.textContent.trim()
+      : null;
+
+    if (!amount || !frequency) {
+      alert("❌ Please select both a donation amount and frequency.");
+      return;
+    }
+
+    // Optional description text
+    const description = amountEl?.parentElement?.nextElementSibling?.textContent?.trim() || null;
+
+    // Insert into Supabase
+    const { data, error } = await supabase
+      .from("donation_plans")
+      .insert([{ amount, frequency, description }]);
+
+    if (error) {
+      alert("❌ Error saving donation: " + error.message);
+      console.error(error);
+    } else {
+      alert("✅ Donation plan saved successfully!");
+      window.location.href = "index.html"; // redirect to homepage
+    }
+  });
+</script>
+
+</body>
+</html> -->

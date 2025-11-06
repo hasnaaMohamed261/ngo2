@@ -1,0 +1,137 @@
+/* :root{
+--number-color:#d2d8c0;
+--line-color:#8bae32;
+--back-color:rgb(249, 247, 243);
+--footer-color: #46512a;
+}
+
+html,
+body{
+    overflow-x: hidden;
+}
+.nav{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/Smiling\ african\ men\ and\ boys\ indoors\ looking\ at\ camera\ _\ Premium\ AI-generated\ image.jpeg');
+    height: 500px;
+    background-size: cover;
+}
+.navvv{
+    color: var(--line-color);
+}
+.navv{
+    color: white;
+}
+.navv:hover{
+    color: var(--line-color);
+}
+.donate{
+    font-weight: 600;
+}
+.donate:hover{
+    background-color: var(--line-color);
+    color: black;
+}
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.change{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+color: white;
+margin-bottom: 20px;
+}
+.can{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.imee{
+display: flex;
+}
+.img{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.counter {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+.cut1{
+    margin-left: 130px;
+}
+.five{
+    padding-left: 75px;
+}
+.linee{
+    border-right: 1px solid var(--number-color);
+    margin-top: 50px;
+    height: 140px;
+    padding: 20px;
+}
+.create1{
+    border: 1px solid var(--footer-color);
+    background-color: var(--line-color);
+    margin-left: 200px;
+    width: 1100px;
+    border-radius: 10px;
+}
+.create{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, -0.1) 40%, rgb(255, 248, 234) 60%);
+  background-size: cover;
+  background-position: center;
+}
+.bn{
+    padding-left: 200px;
+}
+.tale{
+    background-color:rgb(249, 247, 243);
+}
+.rigt{
+    border: 1px solid var(--line-color);
+    width: 600px;
+    background-color: white;
+    border-radius:20px 0 0 20px;
+    -webkit-border-radius:20px 0 0 20px;
+    -moz-border-radius:20px 0 0 20px;
+    -ms-border-radius:20px 0 0 20px;
+    -o-border-radius:20px 0 0 20px;
+}
+.to{
+    margin-top: -50px;
+    width: 500px;
+    height: 320px;
+}
+.lft{
+    border: 1px solid var(--line-color);
+    width: 600px;
+    background-color: white;
+    border-radius:0 20px 20px 0;
+    -webkit-border-radius:0 20px 20px 0;
+    -moz-border-radius:0 20px 20px 0;
+    -ms-border-radius:0 20px 20px 0;
+    -o-border-radius:0 20px 20px 0;
+}
+.lineeee{
+    border-bottom: 1px solid black;
+}
+.fot{
+color: var(--footer-color);
+}
+.lineees{
+   border-bottom: 1px solid var(--line-color);
+} */

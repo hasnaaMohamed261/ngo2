@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Website</title>
+<meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today." />
+    <link rel="stylesheet" href="donate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+
+</head>
+</head>
+<body>
+    <div class="con">
+        <div class="login">
+            <div class="left text-white">
+            <h4 class="ngo">Why NGO?</h4>
+            <div class="line"></div>
+        </div>
+        </div>
+        <div class="check pb-3 pt-2">
+            <h4 ><i class="fa-regular fa-circle-check mx-4 mb-5"></i>To Protect the Environment</h4>
+<h4 class=""><i class="fa-regular fa-circle-check mx-4 mb-5"></i>To Help People in Need</h4>
+<h4><i class="fa-regular fa-circle-check mx-4 mb-5"></i>To Give People a Voice</h4>
+<h4><i class="fa-regular fa-circle-check mx-4 mb-5"></i>To Promote Education</h4>
+</div>
+<div class="right">
+</div>
+        </div> -->
+        <!-- <div class="container">
+<form id="signupForm" class="right">
+  <h4 class="create">Sign Up Now</h4>
+  <p class="see pb-5">To see over 500 offices in Ghana</p>
+  <div class="form d-block">
+    <input type="text" id="name" placeholder="Name" class="mb-4" required>
+    <div class="line2"></div>
+    <input type="email" id="email" placeholder="Email Address" class="mb-4 pt-3" required>
+    <div class="line2"></div>
+    <input type="text" id="phone" placeholder="Phone Number" class="mb-4 pt-3">
+    <div class="line2"></div>
+    <input type="password" id="password" placeholder="Password" class="mb-4 pt-3" required>
+    <div class="line2"></div>
+  </div>
+
+  <div class="check2 d-flex align-items-center justify-content-between">
+    <h6 class="checkbox ms-5"><input type="radio" class="me-2">Remember Me</h6>
+    <a href="forget.html" class="password text-decoration-none">Forget Password</a>
+  </div>
+
+<a href="index.html"><button type="submit" class="btn btn-primary sign rounded-pill p-2">Sign UP</button></a>
+
+  <p class="account mt-3 ms-5">
+    Already have an account?
+    <a href="index2.html" class="text-decoration-none">Login</a>
+  </p>
+</form>
+
+    </div> -->
+<!-- Supabase Library -->
+<!-- <script src="https://unpkg.com/@supabase/supabase-js"></script>
+
+<script>
+// alert("Welcome to our NGO website 💖 Together, let's make the world a better place 🌍");
+
+
+// ===== SUPABASE CONNECTION =====
+const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw";
+
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// ===== SIGNUP FORM =====
+const signupForm = document.getElementById('signupForm');
+if (signupForm) {
+  signupForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!name || !email || !password) {
+      alert("Please fill all required fields.");
+      return;
+    }
+
+    const { data, error } = await supabaseClient
+      .from('users')
+      .insert([{ name, email, phone, password }]);
+
+    if (error) {
+      alert("❌ Error: " + error.message);
+    } else {
+      alert("✅ Account created successfully!");
+            window.location.href = "index.html";
+
+    }
+  });
+}
+</script> -->
+
+
+<!-- </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Website</title>
+  <meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+  <div class="container-fluid g-0">
+    <div class="row g-0">
+      <!-- Left section -->
+      <div class="col-lg-6 d-none d-lg-block text-white left-section">
+        <div class="p-5">
+          <h4 class="text-center mb-3">Why NGO?</h4>
+          <div class="mx-auto line mb-5"></div>
+          <div class="ps-4">
+            <h4><i class="fa-regular fa-circle-check me-3 mt-5 mb-3 "></i>To Protect the Environment</h4>
+            <h4><i class="fa-regular fa-circle-check me-3 mt-5 mb-3"></i>To Help People in Need</h4>
+            <h4><i class="fa-regular fa-circle-check me-3 mt-5 mb-3"></i>To Give People a Voice</h4>
+            <h4><i class="fa-regular fa-circle-check me-3 mt-5 mb-3"></i>To Promote Education</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right section -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center bg-light">
+        <div class="card shadow-lg p-4 border-0 rounded-4" style="width: 80%; max-width: 400px;">
+          <form id="signupForm">
+            <h4 class="text-center text-success mb-2">Sign Up Now</h4>
+            <p class="text-center text-secondary mb-4">To see over 500 offices in Ghana</p>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name" required>
+              <label for="name">Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+              <label for="email">Email Address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+              <label for="phone">Phone Number</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+              <label for="password">Password</label>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember Me</label>
+              </div>
+              <a href="forget.html" class="text-decoration-none text-secondary small">Forget Password</a>
+            </div>
+
+            <a href="index.html"></a><button type="submit" class="btn btn-success w-100 rounded-pill py-2">Sign Up</button>
+
+            <p class="text-center mt-3 text-secondary">
+              Already have an account?
+              <a href="index2.html" class="text-decoration-none">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// alert("Welcome to our NGO website 💖 Together, let's make the world a better place 🌍");
+
+
+// ===== SUPABASE CONNECTION =====
+//   // ✅ Replace these with your actual keys from Supabase
+//   const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+//   const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw";
+//   const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+//   const signupForm = document.getElementById('signupForm');
+
+//   signupForm.addEventListener('submit', async (e) => {
+//     e.preventDefault();
+
+//     // Get form values
+//     const name = document.getElementById('name').value.trim();
+//     const email = document.getElementById('email').value.trim();
+//     const phone = document.getElementById('phone').value.trim();
+//     const password = document.getElementById('password').value.trim();
+
+//     try {
+//       // ✅ Insert user data into Supabase table
+//       const { data, error } = await supabase
+//         .from('users')
+//         .insert([{ name, email, phone, password }]);
+
+//       if (error) throw error;
+
+//       alert('✅ Account created successfully!');
+//       signupForm.reset();
+//       window.location.href = "index2.html"; // redirect to login page
+//     } catch (err) {
+//       alert('❌ Error: ' + err.message);
+//       console.error(err);
+//     }
+//   });
+
+const SUPABASE_URL = "https://knnmbmzabhjganxkqluc.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtubm1ibXphYmhqZ2FueGtxbHVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNTI4ODAsImV4cCI6MjA3NzkyODg4MH0.PsibY_QDVglge_Mys4M-K7TofdHbdVJR437WN2ohkZw";
+
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// ===== SIGNUP FORM =====
+const signupForm = document.getElementById('signupForm');
+if (signupForm) {
+  signupForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!name || !email || !password) {
+      alert("Please fill all required fields.");
+      return;
+    }
+
+    const { data, error } = await supabaseClient
+      .from('users')
+      .insert([{ name, email, phone, password }]);
+
+    if (error) {
+      alert("❌ Error: " + error.message);
+    } else {
+      alert("✅ Account created successfully!");
+            window.location.href = "index.html";
+
+    }
+  });
+}
+</script>
+</body>
+</html>

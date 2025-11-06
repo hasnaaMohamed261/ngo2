@@ -1,0 +1,192 @@
+ .donate-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("images/Project Integration Management Quiz Enhance Key Concepts.jpeg") center/cover no-repeat;
+}
+
+.donate-title {
+  font-family: "Lobster Two", cursive;
+  font-size: 120px;
+}
+
+.amount-btn {
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+  background-color: rgb(53, 215, 178);
+  color: white;
+  border-color: rgb(53, 215, 178);
+}
+
+.custom-input {
+  box-shadow: 0 0 8px rgba(36, 152, 125, 0.5);
+  border-radius: 8px;
+}
+/* .mmm{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Project\ Integration\ Management\ Quiz\ Enhance\ Key\ Concepts.jpeg);
+      background-size:cover;
+      width: 100%;
+      height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.donate{
+font-weight: 600;
+font-size: 150px;
+color: white;
+font-family: "Lobster Two", cursive;
+}
+.box{
+    display: flex;
+    border: 1px solid gray;
+    background-color: white;
+    justify-content: center;
+}
+.money1{
+    margin-left: 20px;
+}
+.money2{
+background-color:rgb(214, 213, 213) ;
+}
+.an{
+    padding: 20px;
+}
+span{
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+span:hover{
+    background-color: rgb(53, 215, 178);
+    color: white;
+}
+.end{
+    margin-top: 50px;
+    background-color: rgb(214, 213, 213);
+    padding: 60px;
+}
+.add,
+.line1,
+.line2,
+.text{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    margin-left: 40px;
+}
+.ttt{
+   display: flex;
+    justify-content: start;
+    margin-left: 40px;
+}
+.tt,
+.txt{
+    width: 300px;
+    padding: 5px;
+}
+.text{
+    width:100px;
+}
+.can{
+    display: flex;
+    justify-content:start;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.gh{
+    width:220px ;
+}
+.tt:hover,
+.ttt:hover,
+.txt:hover,
+.gh:hover{
+
+    box-shadow: 0 0 8px 0 rgb(36, 152, 125);
+}
+.right{
+margin-top: 25px;
+margin-left: 100px;
+}
+.top{
+    margin-left: 50px;
+}
+.topr{
+margin-left: 100px;
+}
+.own{
+        padding: 10px;
+    border: 1px solid gray;
+    width: 350px;
+    margin-left: 30px;
+     box-shadow: 0 0 8px 0 rgb(36, 152, 125);
+}
+.end{
+    display: flex;
+  justify-content: center;
+}
+.addd{
+    display: flex;
+    justify-content: start;
+    padding-left: 95px;
+    padding-top: 10px;
+}
+.emi{
+    width: 300px;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+.emi:hover{
+ box-shadow: 0 0 8px 0 rgb(36, 152, 125);
+}
+.gif{
+    display: flex;
+    justify-content: start;
+    padding-left: 95px;
+    padding-top: 10px;
+}
+.check{
+    display:flex;
+    text-align: center;
+    justify-content: start;
+margin-left: 45px;
+margin-top: 15px;
+}
+.checkbox{
+    margin-left: 30px;
+margin-right: 10px;
+}
+.ccc{
+    display: flex;
+text-align: start;
+}
+.buttons{
+    background-color: rgb(214, 213, 213);
+    padding-bottom: 20px;
+}
+.btn1,
+.btn2{
+    padding: 10px;
+    border: none;
+}
+.btn1{
+    width: 150px;
+    background-color: rgb(175, 172, 172);
+}
+.btn2{
+    background-color: rgb(53, 215, 178);
+    color: white;
+    width: 100px;
+} */

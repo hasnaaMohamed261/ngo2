@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Stories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{
+      --primary-color:#8bae32;
+      --footer-color:#46512a;
+      --back-color:#f9f7f3;
+    }
+    body {background-color: var(--back-color);}
+    .navbar-nav .nav-link.active {color: var(--primary-color); font-weight: 600;}
+    .navbar-nav .nav-link:hover {color: var(--primary-color);}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Smiling african men and boys indoors looking at camera _ Premium AI-generated image.jpeg') center/cover no-repeat;
+      height: 500px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {font-size: 3rem; margin-bottom: 1rem;}
+    .hero p {font-size: 1.2rem;}
+    .impact img {border-radius: 15px; margin-bottom: 20px;}
+    .stats {background-color: #fff; padding: 50px 0; text-align: center;}
+    .stats h2 {font-size: 2rem; font-weight: bold;}
+    .create-section {background-color: var(--primary-color); color: white; padding: 60px 20px; border-radius: 15px; text-align: center; margin: 40px 0;}
+    .stories .story-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      align-items: center;
+    }
+    .stories .story-item:nth-child(even) .story-img {order:2;}
+    .stories .story-img {flex:1 1 50%; padding:15px;}
+    .stories .story-text {flex:1 1 50%; padding:15px;}
+    .stories .story-text h3 {margin-bottom: 20px;}
+    .stories .story-text p {margin-bottom: 10px;}
+    .footer {background-color: var(--footer-color); color: white; padding: 50px 0 20px;}
+    .footer a {color: white; text-decoration: none;}
+    .footer a:hover {color: var(--primary-color);}
+    .btn-primary {background-color: var(--primary-color); border:none;}
+    .btn-primary:hover {background-color:#7aa229;}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/site-logo-white.svg" alt="Logo" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <a href="index2.html" class="btn btn-primary ms-lg-3">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Stories</h1>
+  <p>Learn about inspiring stories of change and hope from our Non-profit Organisation and how we impact communities through our work.</p>
+</section>
+
+<!-- Impact Section -->
+<section class="impact container my-5">
+  <div class="text-center mb-4">
+    <h5 class="text-uppercase text-success">Our Impact</h5>
+    <h2>The impact we have made in our community</h2>
+    <p>Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a positive impact on the world. Give back to your community and be a part of something greater than yourself.</p>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-4"><img src="images/stories-01.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 mb-4"><h2>20M+</h2><p>People served worldwide</p></div>
+      <div class="col-md-3 mb-4"><h2>142,790</h2><p>Projects funded</p></div>
+      <div class="col-md-3 mb-4"><h2>1.8M+</h2><p>People to take action</p></div>
+      <div class="col-md-3 mb-4"><h2>5,246</h2><p>Partner organizations</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Create Section -->
+<section class="create-section container">
+  <h2>We can create a better tomorrow</h2>
+  <p>Every dollar counts and helps us bring hope and essential resources to those in need.</p>
+  <a href="amount.html" class="btn btn-light btn-lg mt-3">Donate Now</a>
+</section>
+
+<!-- Stories Section -->
+<section class="stories container my-5">
+  <div class="story-item">
+    <div class="story-img"><img src="images/ChatGPT Image Oct 17, 2025, 02_26_56 PM.png" class="img-fluid rounded" alt=""></div>
+    <div class="story-text">
+      <h3>The Special One</h3>
+      <p>Join our non-profit organisation to help create a brighter future for those in need. Every donation counts towards making a difference in the lives of those less fortunate.</p>
+      <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="story-item">
+    <div class="story-img"><img src="images/home-07.jpg" class="img-fluid rounded" alt=""></div>
+    <div class="story-text">
+      <h3>A Better Education for Everyone</h3>
+      <p>Our non-profit organisation is dedicated to improving access to education for all. With your support, we can help provide the resources and opportunities needed for success.</p>
+      <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="story-item">
+    <div class="story-img"><img src="images/stories-04.jpg" class="img-fluid rounded" alt=""></div>
+    <div class="story-text">
+      <h3>Health for Everyone</h3>
+      <p>We strive to provide better healthcare access to all communities. Your support helps us reach more people in need.</p>
+      <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="story-item">
+    <div class="story-img"><img src="images/stories-05.jpg" class="img-fluid rounded" alt=""></div>
+    <div class="story-text">
+      <h3>Empowering Women</h3>
+      <p>Our programs focus on empowering women through education and skill-building initiatives, creating sustainable change.</p>
+      <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <img src="images/site-logo.svg" alt="Logo" class="mb-3">
+        <p>The power of giving: Support a cause and make a difference through charity.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>About Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">What We Believe</a></li>
+          <li><a href="#">Our Programs</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Ways To Give</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Fundraise</a></li>
+          <li><a href="#">Planned Giving</a></li>
+          <li><a href="#">Brand Partnership</a></li>
+          <li><a href="#">Legacy Giving</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <p>1234 Thornridge Cir. Syracuse,<br>Connecticut 56789<br>(406) 555-0121<br>mail@example.com</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+      <p class="mb-0">© 2025 Non-Profit Organization. All rights reserved.</p>
+      <div>
+        <i class="fab fa-facebook me-3"></i>
+        <i class="fab fa-twitter me-3"></i>
+        <i class="fab fa-instagram me-3"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{
+      --line-color:#8bae32;
+      --footer-color: #46512a;
+      --back-color: rgb(249, 247, 243);
+    }
+    body {background-color: var(--back-color);}
+    .navbar-nav .nav-link.active {color: var(--line-color); font-weight: 600;}
+    .navbar-nav .nav-link:hover {color: var(--line-color);}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Smiling african men and boys indoors looking at camera _ Premium AI-generated image.jpeg') center/cover no-repeat;
+      height: 500px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {font-size: 3rem; margin-bottom: 1rem;}
+    .hero p {font-size: 1.2rem;}
+    .impact img {border-radius: 15px; margin-bottom: 20px;}
+    .stats {background-color: #fff; padding: 50px 0; text-align: center;}
+    .stats h2 {font-size: 2rem; font-weight: bold;}
+    .create-section {background-color: var(--line-color); color: white; padding: 60px 20px; border-radius: 15px; text-align: center; margin: 40px 0;}
+    .stories .card img {height: 250px; object-fit: cover;}
+    .footer {background-color: var(--footer-color); color: white; padding: 50px 0 20px;}
+    .footer a {color: white; text-decoration: none;}
+    .footer a:hover {color: var(--line-color);}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/site-logo-white.svg" alt="Logo" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <a href="index2.html" class="btn btn-success ms-lg-3">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Stories</h1>
+  <p>Learn about inspiring stories of change and hope from our Non-profit Organisation and how we impact communities through our work.</p>
+</section>
+
+<!-- Impact Section -->
+<section class="impact container my-5">
+  <div class="text-center mb-4">
+    <h5 class="text-uppercase text-success">Our Impact</h5>
+    <h2>The impact we have made in our community</h2>
+    <p>Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a positive impact on the world. Give back to your community and be a part of something greater than yourself.</p>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-4"><img src="images/stories-01.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 mb-4"><h2>20M+</h2><p>People served worldwide</p></div>
+      <div class="col-md-3 mb-4"><h2>142,790</h2><p>Projects funded</p></div>
+      <div class="col-md-3 mb-4"><h2>1.8M+</h2><p>People to take action</p></div>
+      <div class="col-md-3 mb-4"><h2>5,246</h2><p>Partner organizations</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Create Section -->
+<section class="create-section container">
+  <h2>We can create a better tomorrow</h2>
+  <p>Every dollar counts and helps us bring hope and essential resources to those in need.</p>
+  <a href="amount.html" class="btn btn-light btn-lg mt-3">Donate Now</a>
+</section>
+
+<!-- Stories Section -->
+<section class="stories container my-5">
+  <div class="text-center mb-4">
+    <h2>Inspiring tales of transformation</h2>
+    <p>Get inspired by the remarkable stories of transformation through our non-profit organization. Join us in making a positive impact today.</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card">
+        <img src="images/ChatGPT Image Oct 17, 2025, 02_26_56 PM.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">The Special One</h5>
+          <p class="card-text">Join our non-profit organisation to help create a brighter future for those in need. Every donation counts towards making a difference in the lives of those less fortunate.</p>
+          <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <img src="images/home-07.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">A Better Education for Everyone</h5>
+          <p class="card-text">Our non-profit organisation is dedicated to improving access to education for all. With your support, we can help provide the resources and opportunities needed for success.</p>
+          <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <img src="images/site-logo.svg" alt="Logo" class="mb-3">
+        <p>The power of giving: Support a cause and make a difference through charity.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>About Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">What We Believe</a></li>
+          <li><a href="#">Our Programs</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Ways To Give</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Fundraise</a></li>
+          <li><a href="#">Planned Giving</a></li>
+          <li><a href="#">Brand Partnership</a></li>
+          <li><a href="#">Legacy Giving</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <p>1234 Thornridge Cir. Syracuse,<br>Connecticut 56789<br>(406) 555-0121<br>mail@example.com</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+      <p class="mb-0">© 2025 Non-Profit Organization. All rights reserved.</p>
+      <div>
+        <i class="fab fa-facebook me-3"></i>
+        <i class="fab fa-twitter me-3"></i>
+        <i class="fab fa-instagram me-3"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Website</title>
+  <meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{
+      --line-color:#8bae32;
+      --footer-color: #46512a;
+      --back-color: rgb(249, 247, 243);
+    }
+    body {
+      background-color: var(--back-color);
+    }
+    .navbar-nav .nav-link.active {
+      color: var(--line-color);
+      font-weight: 600;
+    }
+    .navbar-nav .nav-link:hover {
+      color: var(--line-color);
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Smiling african men and boys indoors looking at camera _ Premium AI-generated image.jpeg') center/cover no-repeat;
+      height: 500px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .impact img {
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .stats {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .stats h2 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .create-section {
+      background-color: var(--line-color);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .stories .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: var(--footer-color);
+      color: white;
+      padding: 50px 0 20px;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: var(--line-color);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/site-logo-white.svg" alt="Logo" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <a href="index2.html" class="btn btn-success ms-lg-3">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Stories</h1>
+  <p>Learn about inspiring stories of change and hope from our Non-profit Organisation and how we impact communities through our work.</p>
+</section>
+
+<!-- Impact Section -->
+<section class="impact container my-5">
+  <div class="text-center mb-4">
+    <h5 class="text-uppercase text-success">Our Impact</h5>
+    <h2>The impact we have made in our community</h2>
+    <p>Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a positive impact on the world. Give back to your community and be a part of something greater than yourself.</p>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-4"><img src="images/stories-01.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+    <div class="col-md-4"><img src="images/stories-02.jpg" class="img-fluid" alt=""></div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 mb-4"><h2>20M+</h2><p>People served worldwide</p></div>
+      <div class="col-md-3 mb-4"><h2>142,790</h2><p>Projects funded</p></div>
+      <div class="col-md-3 mb-4"><h2>1.8M+</h2><p>People to take action</p></div>
+      <div class="col-md-3 mb-4"><h2>5,246</h2><p>Partner organizations</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Create Section -->
+<section class="create-section container">
+  <h2>We can create a better tomorrow</h2>
+  <p>Every dollar counts and helps us bring hope and essential resources to those in need.</p>
+  <a href="amount.html" class="btn btn-light btn-lg mt-3">Donate Now</a>
+</section>
+
+<!-- Stories Section -->
+<section class="stories container my-5">
+  <div class="text-center mb-4">
+    <h2>Inspiring tales of transformation</h2>
+    <p>Get inspired by the remarkable stories of transformation through our non-profit organization. Join us in making a positive impact today.</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card">
+        <img src="images/ChatGPT Image Oct 17, 2025, 02_26_56 PM.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">The Special One</h5>
+          <p class="card-text">Join our non-profit organisation to help create a brighter future for those in need. Every donation counts towards making a difference in the lives of those less fortunate.</p>
+          <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <img src="images/home-07.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">A Better Education for Everyone</h5>
+          <p class="card-text">Our non-profit organisation is dedicated to improving access to education for all. With your support, we can help provide the resources and opportunities needed for success.</p>
+          <a href="#" class="text-success">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <img src="images/site-logo.svg" alt="Logo" class="mb-3">
+        <p>The power of giving: Support a cause and make a difference through charity.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>About Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">What We Believe</a></li>
+          <li><a href="#">Our Programs</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Ways To Give</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Fundraise</a></li>
+          <li><a href="#">Planned Giving</a></li>
+          <li><a href="#">Brand Partnership</a></li>
+          <li><a href="#">Legacy Giving</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <p>1234 Thornridge Cir. Syracuse,<br>Connecticut 56789<br>(406) 555-0121<br>mail@example.com</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+      <p class="mb-0">© 2025 Non-Profit Organization. All rights reserved.</p>
+      <div>
+        <i class="fab fa-facebook me-3"></i>
+        <i class="fab fa-twitter me-3"></i>
+        <i class="fab fa-instagram me-3"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>NGO Website</title>
+<meta name="description" content="Our NGO website is dedicated to helping communities in need across West Africa. We focus on education, health, and empowerment to make a lasting difference in people’s lives. Join us and be the reason someone smiles today." />
+    <link rel="stylesheet" href="stories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="nav">
+    <div class="container-fluid">
+        <div class="nav1 menu-items d-flex align-items-center justify-content-evenly m-lg-3">
+            <img src="images/site-logo-white.svg" class="img">
+            <a href="index.html" class="nav-links active navvv text-decoration-none">Home</a>
+            <a href="#" class="nav-links navv text-decoration-none">About Us</a>
+            <a href="#" class="nav-links navv top text-decoration-none">Our work</a>
+            <a href="stories.html" class="nav-links navv top text-decoration-none">Stories</a>
+            <a href="#" class="nav-links navv top text-decoration-none">Contact</a>
+<a href="index2.html" target="_blank9=]'llllllllllllllllll
+\'><button class="donate px-4 py-3 rounded-3 fs-6">Donate</button></a>
+ <label for="menu-toggle" class="menu-icon text-white fs-2">&#9776;</label>
+        </div>
+
+    </div>
+    <div class=" container ">
+            <h1 class="change">Stories</h1>
+      <p class="text-white">Learn about inspiring stories of change and hope from our Non-profit<br> Organisation and how we impact communities through our work.</p>
+</div>
+</div>
+<div class="impact">
+    <div class="container can">
+<p class="ps-5 ms-5">OUR IMPACT</p>
+<div class="leftt">
+    <h1>The impact we have made in our community</h1>
+    <p>Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a <br>positive impact on the world. Give back to your community and be a part of something greater than yourself.</p>
+</div>
+    </div>
+    <div class="images">
+        <div class="container imee d-flex">
+        <img src="images/stories-01.jpg" class="img">
+        <img src="images/stories-02.jpg" class="img">
+        <img src="images/stories-02.jpg" class="img">
+        </div>
+    </div>
+</div>
+<div class="five d-lg-flex">
+    <div class="cut1">
+    <div class=" count d-flex align-items-center justify-content-center ps-lg-5">
+ <div class="counter" data-target="20">0</div>
+<div class="counter">M+</div>
+</div>
+<p class="ps-lg-5">People served worldwide</p>
+</div>
+ <div class="linee m-lg-4 m-sm-3"></div>
+    <div class="cut">
+    <div class=" count d-flex align-items-center justify-content-center ps-lg-3">
+ <div class="counter" data-target="142790">0</div>
+</div>
+<p class="ps-5">Projects funded</p>
+</div>
+ <div class="linee m-4"></div>
+    <div class="cut">
+    <div class="count d-flex ps-5">
+ <div class="counter" data-target="1.8">0</div>
+<div class="counter">M+</div>
+</div>
+<p class="ps-5">People to take action</p>
+</div>
+ <div class="linee m-4"></div>
+    <div class="cut">
+    <div class="count d-flex ps-5">
+ <div class="counter" data-target="5246">0</div>
+</div>
+<p class="ps-5">Partner organizations</p>
+</div>
+</div>
+<div class="create">
+<div class="create1 d-lg-flex align-items-center justify-content-center">
+<div class="view py-lg-5">
+  <h1>We can create a better tomorrow</h1>
+  <p>Every dollar counts and helps us bring hope and essential resources to those in need.</p>
+  </div>
+  <div class="bn">
+  <a href="amount.html"><button class="py-lg-3 px-lg-4 rounded-3 border-0">Donate Now</button></a>
+</div>
+</div>
+</div>
+<div class="tale">
+<div class="container d-flex justify-content-center align-items-center text-center">
+    <div class="tt mt-5 mb-3">
+        <h1>Inspiring tales of transformation</h1>
+        <p>Get inspired by the remarkable stories of transformation through our non-profit organization. Join us <br>in making a positive impact today.</p>
+    </div>
+</div>
+    <div class="twopho d-lg-flex justify-content-center ms-sm-5 ps-sm-5">
+        <div class="rigt mt-5 mb-3 pb-5 mt-sm-5">
+<img src="images/ChatGPT Image Oct 17, 2025, 02_26_56 PM.png" class="to ms-5 ps-2 rounded-4 mt-sm-5">
+<h3 class="mt-4 ps-5">The Special One</h3>
+<p class="ps-5">Join our non-profit organisation to help create a brighter future<br> for those in need. Every donation counts towards making a <br>difference in the lives of those less fortunate.</p>
+<span class="txt ps-5">Read More <i class="fa-solid fa-arrow-right ms-1"></i></span>
+        </div>
+    <div class="lft mt-5 mb-3 pb-5 ">
+<img src="images/home-07.jpg" class="to ms-5 ps-2 rounded-4 mt-sm-5">
+<h3 class="mt-4 ps-5">A Better Education for Everyone</h3>
+<p class="ps-5">Our non-profit organisation is dedicated to improving access to <br>education for all. With your support, we can help provide the<br> resources and opportunities needed for success.</p>
+<span class="txt ps-5">Read More <i class="fa-solid fa-arrow-right ms-1"></i></span>
+        </div>
+    </div>
+</div>
+<div class="tale">
+    <div class="twopho d-lg-flex justify-content-center ms-sm-5 ps-sm-5">
+        <div class="rigt mt-5 mb-3 pb-5 mt-sm-5">
+<img src="images/stories-04.jpg" class="to ms-5 ps-2 rounded-4 mt-sm-5">
+<h3 class="mt-4 ps-5">The Special One</h3>
+<p class="ps-5">Join our non-profit organisation to help create a brighter future<br> for those in need. Every donation counts towards making a <br>difference in the lives of those less fortunate.</p>
+<span class="txt ps-5">Read More <i class="fa-solid fa-arrow-right ms-1"></i></span>
+        </div>
+    <div class="lft mt-5 mb-3 pb-5 ">
+<img src="images/stories-05.jpg" class="to ms-5 ps-2 rounded-4 mt-sm-5">
+<h3 class="mt-4 ps-5">A Better Education for Everyone</h3>
+<p class="ps-5">Our non-profit organisation is dedicated to improving access to <br>education for all. With your support, we can help provide the<br> resources and opportunities needed for success.</p>
+<span class="txt ps-5">Read More <i class="fa-solid fa-arrow-right ms-1"></i></span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="lineeee"></div>
+<div class="foot p-5">
+    <div class="about d-flex justify-content-evenly">
+        <div class="pt col-sm-4">
+            <img src="images/site-logo.svg">
+            <p class="fot pt-4">The power of giving: Support a <br>cause and make a difference <br>through charity.</p>
+        </div>
+        <div class="list1 col-sm-3">
+            <h4>About Us</h4>
+            <a class="nav-link fot pb-1" href="#">Our History</a>
+            <a class="nav-link fot pb-1"href="#">What We Believe</a>
+            <a class="nav-link fot pb-1" href="#">Our Programs</a>
+            <a class="nav-link fot pb-1" href="#">Partners</a>
+        </div>
+        <div class="list1 col-sm-3">
+            <h4>Ways To Give</h4>
+            <a class="nav-link fot pb-1" href="#">Fundraise</a>
+            <a class="nav-link fot pb-1"href="#">Planned Giving</a>
+            <a class="nav-link fot pb-1" href="#">Brand Partnership</a>
+            <a class="nav-link fot pb-1" href="#">Legacy Giving</a>
+        </div>
+        <div class="list1">
+            <h4>Contact Info</h4>
+            <p class="fot">1234 Thornridge Cir. Syracuse,<br>Connecticut 56789<br>(406) 555-0121<br>mail@example.com</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="lineees"></div>
+    <div class="non d-flex justify-content-between">
+        <div class="pp ps-5 ms-4 col-sm-6">
+        <p class="ps-5 ms-5 py-4 mt-4 ">© 2025 Non-Profit Organization. All rights reserved.</p>
+</div>
+        <div class="icons pe-5 me-5 py-4 mt-4">
+<i class="fa-brands fa-facebook pe-3"></i>
+<i class="fa-brands fa-twitter pe-3"></i>
+<i class="fa-brands fa-instagram pe-3"></i>
+<i class="fa-brands fa-youtube pe-5 me-5"></i>
+        </div>
+    </div>
+</div>
+</div>
+<script src="stories.js"></script>
+</body>
+</html> -->
