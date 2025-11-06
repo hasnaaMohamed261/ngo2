@@ -134,7 +134,7 @@
       }
 
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: window.location.origin + "hasnaa261.netlify.app/update-password.html",
+        redirectTo: window.location.origin + "https://hasnaa261.netlify.app/update-password.html",
       });
 
       if (error) {
