@@ -48,24 +48,3 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
   }
 });
 
-
-
-
-// const counter= document.querySelector(".counter");
-//     const target = +counter.getAttribute("data-target");
-//     let count = 0;
-
-//     function updateCounter() {
-//       const speed = 5; // كل ما تقل، العداد يعد أسرع
-//       const increment = target / 100;
-
-//       if (count < target) {
-//         count += increment;
-//         counter.textContent = Math.ceil(count);
-//         setTimeout(updateCounter, speed);
-//       } else {
-//         counter.textContent = target;
-//       }
-//     }
-
-//     updateCounter();

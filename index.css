@@ -8,26 +8,11 @@ html,
 body{
     overflow-x: hidden;
 }
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10; /* يخليه فوق الخلفية */
-  background: transparent !important; /* يخلي الخلفية شفافة فوق الصورة */
-  padding-top: 15px; /* مسافة بسيطة من فوق */
+body{
+    overflow-x: hidden;
+    color: #333;
+    line-height: 1.6;
 }
-
-.navbar .nav-link {
-  color: white !important;
-  font-weight: 500;
-  margin: 0 10px;
-}
-
-.navbar .nav-link:hover {
-  color: #8bae32 !important; /* نفس اللون اللي عندك */
-}
-
 .btn-1 {
   background-color: #8bae32;
   border: none;
@@ -39,525 +24,159 @@ body{
   color: #8bae32;
 }
 
-.nav{
+header{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('images/Central\ African\ Republic.jpeg');
-    height: 800px;
+    url('images/Central\ African\ Republic.jpeg') ;
+    height: 600px;
     background-size: cover;
 }
-.navvv{
-    color: var(--line-color);
-}
-.navv{
-    color: white;
-}
-.navv:hover{
-    color: var(--line-color);
-}
-.donate{
-    font-weight: 600;
-}
-.donate:hover{
-    background-color: var(--line-color);
-    color: black;
-}
-.menu-icon {
-  display: none;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
+.img{
+padding-left: 30px;
 }
 .change{
-font-size: 70px;
+font-size: 60px;
 }
-.now{
-    color: white;
-    background-color: var(--line-color);
-}
-.num{
-    color: var(--number-color);
+.home{
+    color:  #8bae32;
 }
 .box {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, -0.1) 13%, rgb(249, 247, 243) 87%);
+   /* background: linear-gradient(to bottom, rgba(0,0,0,0.05) 13%, rgb(249,247,243) 87%); */
+   background-color: white;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
-.boxx{
-    margin-top: -80px;
+
+.boxx {
+  margin-top: -80px;
 }
-.body1{
-    background-color: var(--back-color);
-background-position: center 200px;
-    width: 100%;
-    padding-top:30px
+.num{
+    color: var(--number-color);
 }
 .first{
     border: 1px solid var(--number-color);
     background-color: white;
-    padding: 60px;
-}
-.txt{
-    font-weight: 600;
-}
-.line{
-    border-right: 1px solid var(--number-color);
-}
-.fourimg2{
-    width: 320px;
-    height: 230px;
-    margin-top: 70px;
-}
-.fourimg3{
-width: 320px;
-height: 350px;
+    padding: 20px;
 }
 .btnn{
     font-weight: 600;
     background-color: white;
+
 }
 .btnn:hover{
     background-color: black;
     color: white;
 }
+
+.body1{
+    width: 100%;
+    padding-top:30px;
+    background-color: var(--back-color);
+}
+.creat {
+  border-radius: 15px;
+  padding: 40px;
+}
+
 .counter {
-  font-size: 45px;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  margin-top: 50px;
-}
-.cut1{
-    margin-left: 130px;
-}
-.linee{
-    border-right: 1px solid var(--number-color);
-    margin-top: 50px;
-    height: 140px;
-    padding: 20px;
-}
-.five{
-    padding-left: 75px;
-}
-.create1{
-    border: 1px solid var(--line-color);
-    background-color: var(--line-color);
-    margin-left: 200px;
-    width: 1100px;
-    border-radius: 10px;
-}
-.create{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, -0.1) 40%, rgb(255, 248, 234) 60%);
-  background-size: cover;
-  background-position: center;
-}
-.bn{
-    padding-left: 200px;
-}
-.cll{
-    background-color: var(--back-color);
-}
-.photo{
-    width: 500px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.join{
-margin-top: 80px;
-margin-left: 90px;
-}
-.nw{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: white;
-    font-weight: 600;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.lineee1{
-    border-bottom: 1px solid black;
-}
-.tale{
-    background-color:var(--back-color);
-}
-.rigt{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:20px 0 0 20px;
-    -webkit-border-radius:20px 0 0 20px;
-    -moz-border-radius:20px 0 0 20px;
-    -ms-border-radius:20px 0 0 20px;
-    -o-border-radius:20px 0 0 20px;
-}
-.to{
-    margin-top: -50px;
-    width: 500px;
-    height: 320px;
-}
-.lft{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:0 20px 20px 0;
-    -webkit-border-radius:0 20px 20px 0;
-    -moz-border-radius:0 20px 20px 0;
-    -ms-border-radius:0 20px 20px 0;
-    -o-border-radius:0 20px 20px 0;
-}
-.part{
-    background-color: var(--back-color) ;
-}
-.lineeee{
-    border-bottom: 1px solid black;
-}
-.fot{
-color: var(--footer-color);
-}
-.lineees{
-    border-bottom: 1px solid var(--line-color);
-}
-@media (max-width: 375px) {
-.nav{
-    background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('images/Central\ African\ Republic.jpeg');
-    height: 600px;
-    background-size: cover;
-}
-.nav-links,
-.donate {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-    #menu-toggle .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-.donate{
-    font-weight: 600;
-}
-.donate:hover{
-    background-color: var(--line-color);
-    color: black;
-}
-.change{
-font-size: 12px;
-font-weight: 400;
-}
-.now{
-    color: white;
-    background-color: var(--line-color);
-
-}
-.num{
-    color: var(--number-color);
-}
- .box{
-    display: grid;
- }
- .vv{
-    padding: 5px;
- }
-.body1{
-    width: 100%;
-    padding-top:30px
-}
-.txt{
-    font-weight: 600;
-}
-.line{
-    border-right: 1px solid var(--number-color);
-}
-.ccc{
-    flex-direction: column !important;
-    align-items: center;
-}
-.btnn{
-    font-size: 12px;
-    font-weight: 600;
-    background-color: white;
-}
-.btnn:hover{
-    background-color: black;
-    color: white;
-}
-.lll{
-    background-color: white;
-    padding-left: 15px;
-}
- .counter, .fourimg, .fourimg2, .fourimg3, .five {
-    display: none;
-  }
-.linee{
-    border-bottom: 1px solid var(--number-color);
-}
-.create1{
-    border: 1px solid var(--line-color);
-    margin-left: 10px;
-    width: 200px;
-    border-radius: 10px;
-    justify-content: start;
-    padding: 20px;
-}
-.bn{
-    padding-left: 200px;
-}
-.cll{
-    background-color: var(--back-color);
-}
-.photo{
-    width: 500px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.join{
-margin-top: 80px;
-margin-left: 90px;
-}
-.nw{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: white;
-    font-weight: 600;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.lineee1{
-    border-bottom: 1px solid black;
-}
-.tale{
-    background-color:var(--back-color);
-}
-.rigt{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:20px 0 0 20px;
-    -webkit-border-radius:20px 0 0 20px;
-    -moz-border-radius:20px 0 0 20px;
-    -ms-border-radius:20px 0 0 20px;
-    -o-border-radius:20px 0 0 20px;
-}
-.to{
-    margin-top: -50px;
-    width: 500px;
-    height: 320px;
-}
-.lft{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:0 20px 20px 0;
-    -webkit-border-radius:0 20px 20px 0;
-    -moz-border-radius:0 20px 20px 0;
-    -ms-border-radius:0 20px 20px 0;
-    -o-border-radius:0 20px 20px 0;
-}
-.part{
-    background-color: var(--back-color) ;
-}
-.lineeee{
-    border-bottom: 1px solid black;
-}
-.fot{
-color: var(--footer-color);
-}
-.lineees{
-    border-bottom: 1px solid var(--line-color);
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+  transition: all 0.3s ease;
 }
 
+.counter:hover {
+  color: #8bae32; /* لون جذاب عند المرور */
+  transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
-.nav{
-    background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('images/Central\ African\ Republic.jpeg');
-    height: 600px;
-    background-size: cover;
-}
-.nav-links,
-.donate {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-    #menu-toggle .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-.donate{
-    font-weight: 600;
-}
-.donate:hover{
-    background-color: var(--line-color);
-    color: black;
-}
-.change{
-font-size: 30px;
-}
-.now{
-    color: white;
-    background-color: var(--line-color);
-}
-.num{
-    color: var(--number-color);
-}
- .box{
-    display: grid;
- }
-.body1{
-    background-color: var(--back-color);
-background-position: center 200px;
-    width: 50%;
-    padding-top:30px
-}
-.txt{
-    font-weight: 600;
-}
-.line{
-    border-right: 1px solid var(--number-color);
-}
-.ccc{
-    flex-direction: column !important;
-    align-items: center;
-}
-.btnn{
-    font-weight: 600;
-    background-color: white;
-}
-.btnn:hover{
-    background-color: black;
-    color: white;
-}
-.lll{
-    background-color: white;
-    padding-left: 15px;
-}
- .counter, .fourimg, .fourimg2, .fourimg3, .five {
-    display: none;
-  }
-.linee{
-    border-bottom: 1px solid var(--number-color);
-}
-.create1{
-    border: 1px solid var(--line-color);
-    margin-left: 110px;
-    width: 800px;
-    border-radius: 10px;
-    justify-content: start;
-    padding: 20px;
-    width: 600px;
-}
-.bn{
-    padding-left: 200px;
-}
-.cll{
-    background-color: var(--back-color);
-}
-.photo{
-    width: 500px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.join{
-margin-top: 80px;
-margin-left: 90px;
-}
-.nw{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: white;
-    font-weight: 600;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.lineee1{
-    border-bottom: 1px solid black;
-}
-.tale{
-    background-color:var(--back-color);
-}
-.rigt{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:20px 0 0 20px;
-    -webkit-border-radius:20px 0 0 20px;
-    -moz-border-radius:20px 0 0 20px;
-    -ms-border-radius:20px 0 0 20px;
-    -o-border-radius:20px 0 0 20px;
-}
-.to{
-    margin-top: -50px;
-    width: 500px;
-    height: 320px;
-}
-.lft{
-    border: 1px solid var(--line-color);
-    width: 600px;
-    background-color: white;
-    border-radius:0 20px 20px 0;
-    -webkit-border-radius:0 20px 20px 0;
-    -moz-border-radius:0 20px 20px 0;
-    -ms-border-radius:0 20px 20px 0;
-    -o-border-radius:0 20px 20px 0;
-}
-.part{
-    background-color: var(--back-color) ;
-}
-.lineeee{
-    border-bottom: 1px solid black;
-}
-.fot{
-color: var(--footer-color);
-}
-.lineees{
-    border-bottom: 1px solid var(--line-color);
+p {
+  font-size: 16px;
+  color: #333;
 }
 
+/* الصندوق المركزي */
+.create1 {
+  background-color: var(--line-color);
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.06);
+  max-width: 1100px; /* يحدد أقصى عرض مع بقاءه متجاوب */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+}
+
+/* عناوين متدرجة على الأجهزة */
+.view h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+@media(min-width: 992px){
+  .view h1 { font-size: 1.75rem; } /* أكبر على الشاشات الكبيرة */
+}
+
+/* زر مخصص */
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #6e8e27;
+  border-color: #6e8e27;
+  color: #fff;
+}
+
+/* محاذاة داخلية صغيرة على الشاشات الصغيرة */
+@media (max-width: 575.98px) {
+  .create1 { padding-left: 1rem; padding-right: 1rem; }
+}
+.cll {
+  background-color: var(--back-color);
+}
+
+.nw:hover {
+  background-color: black;
+  color: white;
+}
+.inspir{
+    background-color: var(--number-color);
+}
+.tale {
+  background-color: var(--back-color);
+}
+
+
+.txt:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.card img:first-child {
+  height: 400px;
+}
+.fot {
+  color: var(--line-color);
+  font-size: 15px;
+}
+
+footer {
+  background-color: white;
+}
+.lineees {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.footer p {
+  color: var(--footer-color);
+  font-size: 15px;
+}
+
+.footer a:hover i {
+  color: var(--main-color); /* لون الهوفر */
+  transition: 0.3s ease;
+}
+/* Navbar hover and active color */
+.navbar-nav .nav-link:hover {
+  color: var(--line-color) !important;
 }
 
